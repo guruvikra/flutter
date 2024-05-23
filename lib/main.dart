@@ -20,8 +20,14 @@ class MyApp extends StatelessWidget {
       // ),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blueGrey,
+      appBarTheme: AppBarTheme(
+        color: Colors.white,
+        elevation: 0.0,
+
+      ),
       // primaryTextTheme: Typography.whiteRedwoodCity
       ),
+      initialRoute: MyRoutes.home,
       routes: {
         MyRoutes.login:(context)=>const LoginPage(),
         MyRoutes.home:(context)=>const HomePage(),
